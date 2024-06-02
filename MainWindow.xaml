@@ -1,0 +1,29 @@
+﻿<Window x:Class="Egzaminas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Egzaminas"
+        mc:Ignorable="d"
+        Title="Egzaminas" Height="145" Width="364">
+    <Grid Margin="0,0,-14,-21">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="13*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="79*"/>
+            <ColumnDefinition Width="284*"/>
+            <ColumnDefinition Width="15*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="PasswordBox" HorizontalAlignment="Left" Margin="36,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
+        <Button x:Name="Encrypt" Content="Uzkoduoti" HorizontalAlignment="Left" Margin="67,54,0,0" VerticalAlignment="Top" Click="Encrypt_Click" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="47,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="98" Height="16" Grid.ColumnSpan="2"><Run Text="Iveskite slaptazodi"/><LineBreak/><Run/></TextBlock>
+        <Button x:Name="Decrypt" Content="Atkoduoti" HorizontalAlignment="Left" Margin="67,79,0,0" VerticalAlignment="Top" Height="20" Width="59" Click="Decrypt_Click" Grid.ColumnSpan="2"/>
+        <RadioButton x:Name="button_1t" Content="1" HorizontalAlignment="Left" Margin="120,34,0,0" VerticalAlignment="Top" Height="14" Width="79" Checked="button_1t_Checked" Grid.Column="1"/>
+        <RadioButton x:Name="button_2t" Content="2" HorizontalAlignment="Left" Margin="120,48,0,0" VerticalAlignment="Top" Height="14" Width="79" Checked="button_2t_Checked" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="120,13,0,0" TextWrapping="Wrap" Text="Giju skaicius, default 3" VerticalAlignment="Top" Width="118" Height="16" Grid.Column="1"/>
+        <RadioButton x:Name="button_3t" Content="3" HorizontalAlignment="Left" Margin="120,62,0,0" VerticalAlignment="Top" Height="14" Width="79" Checked="button_3t_Checked" Grid.Column="1"/>
+
+    </Grid>
+</Window>
